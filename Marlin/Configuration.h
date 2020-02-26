@@ -719,7 +719,7 @@
 // X/Y = 80 x2 (0.9 stepper)
 // Z = 400 x2 (0.9 stepper) x2 (t8-4 leadscrew, 2 start)
 // E = 415 (BMG) x2 (0.9 stepper)
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.46, 163.63, 1600, 830 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.0, 161.5, 1600, 830 }
 
 /**
  * Default Max Feed Rate (mm/s)
