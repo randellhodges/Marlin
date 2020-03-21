@@ -719,7 +719,8 @@
 // X/Y = 80 x2 (0.9 stepper)
 // Z = 400 x2 (0.9 stepper) x2 (t8-4 leadscrew, 2 start)
 // E = 415 (BMG) x2 (0.9 stepper)
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.0, 161.5, 1600, 830 }
+// 161.4, 161.6
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.0, 161.0, 1600, 830 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -739,7 +740,7 @@
  * Override with M201
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_ACCELERATION      { 500, 500, 250, 5000 }
+#define DEFAULT_MAX_ACCELERATION      { 500, 500, 200, 5000 }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
@@ -1088,7 +1089,7 @@
 #define Y_BED_SIZE 230
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -21
+#define X_MIN_POS -24
 #define Y_MIN_POS -14
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
@@ -1275,7 +1276,7 @@
 
   #define MESH_EDIT_GFX_OVERLAY     // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 5              // Set Mesh bounds as an inset region of the bed
+  #define MESH_INSET 10             // Set Mesh bounds as an inset region of the bed
   #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
