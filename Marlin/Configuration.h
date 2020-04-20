@@ -484,9 +484,9 @@
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
   // My PID Autotune Settings (M303 E0 C16 S240 U1)
- #define DEFAULT_Kp 30.87
-  #define DEFAULT_Ki 2.97
-  #define DEFAULT_Kd 80.27
+  #define DEFAULT_Kp 30.34
+  #define DEFAULT_Ki 3.48
+  #define DEFAULT_Kd 66.05
 
 #endif // PIDTEMP
 
@@ -524,9 +524,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // My PID Autotune Settings (M303 E-1 C16 S110 U1)
-  #define DEFAULT_bedKp 51.07
-  #define DEFAULT_bedKi 9.97
-  #define DEFAULT_bedKd 174.30
+  #define DEFAULT_bedKp 78.09
+  #define DEFAULT_bedKi 15.60
+  #define DEFAULT_bedKd 260.56
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
