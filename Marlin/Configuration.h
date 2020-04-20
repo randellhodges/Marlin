@@ -128,7 +128,7 @@
 
 // Choose the name from boards.h that matches your setup
 #ifndef MOTHERBOARD
-  #define MOTHERBOARD BOARD_BTT_SKR_V1_4_TURBO
+  #define MOTHERBOARD BOARD_BTT_SKR_V1_4
 #endif
 
 // Name displayed in the LCD "Ready" message and Info menu
@@ -492,10 +492,10 @@
 
   // If you are using a pre-configured hotend then you can use one of the value sets by uncommenting it
 
-  // My PID Autotune Settings (M303 E0 C16 S250 U1)
-  #define DEFAULT_Kp 27.05
-  #define DEFAULT_Ki 2.70
-  #define DEFAULT_Kd 67.84
+  // My PID Autotune Settings (M303 E0 C16 S240 U1)
+ #define DEFAULT_Kp 30.87
+  #define DEFAULT_Ki 2.97
+  #define DEFAULT_Kd 80.27
 
 #endif // PIDTEMP
 
@@ -532,10 +532,10 @@
   //#define MIN_BED_POWER 0
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
-  // My PID Autotune Settings (M303 E-1 C16 S90 U1)
-  #define DEFAULT_bedKp 44.45
-  #define DEFAULT_bedKi 6.52
-  #define DEFAULT_bedKd 201.98
+  // My PID Autotune Settings (M303 E-1 C16 S110 U1)
+  #define DEFAULT_bedKp 51.07
+  #define DEFAULT_bedKi 9.97
+  #define DEFAULT_bedKd 174.30
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -725,11 +725,7 @@
 // https://blog.prusaprinters.org/calculator/
 // Defaults: 80, 80, 400, 93 (1.8 stepper)
 
-// X/Y = 80 x2 (0.9 stepper)
-// Z = 400 x2 (0.9 stepper) x2 (t8-4 leadscrew, 2 start)
-// E = 415 (BMG) x2 (0.9 stepper)
-// 161.4, 161.6
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 161.0, 161.0, 1600, 830 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.0, 160.0, 400, 830 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -778,9 +774,9 @@
  */
 #define CLASSIC_JERK
 #if ENABLED(CLASSIC_JERK)
-  #define DEFAULT_XJERK  8.0
-  #define DEFAULT_YJERK  8.0
-  #define DEFAULT_ZJERK  0.4
+  #define DEFAULT_XJERK   8.0
+  #define DEFAULT_YJERK   8.0
+  #define DEFAULT_ZJERK   0.4
 
   //#define TRAVEL_EXTRA_XYJERK 0.0     // Additional jerk allowance for all travel moves
 
@@ -965,7 +961,7 @@
 #define MIN_PROBE_EDGE 5
 
 // X and Y axis travel speed (mm/m) between probes
-#define XY_PROBE_SPEED 8000
+#define XY_PROBE_SPEED 10000
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
 #define Z_PROBE_SPEED_FAST HOMING_FEEDRATE_Z
@@ -1094,16 +1090,16 @@
 // @section machine
 
 // The size of the print bed
-#define X_BED_SIZE 230
+#define X_BED_SIZE 233
 #define Y_BED_SIZE 230
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
-#define X_MIN_POS -24
-#define Y_MIN_POS -14
+#define X_MIN_POS -23
+#define Y_MIN_POS -5
 #define Z_MIN_POS 0
 #define X_MAX_POS X_BED_SIZE
 #define Y_MAX_POS Y_BED_SIZE
-#define Z_MAX_POS 240
+#define Z_MAX_POS 250
 
 /**
  * Software Endstops
@@ -1285,7 +1281,7 @@
 
   #define MESH_EDIT_GFX_OVERLAY     // Display a graphics overlay while editing the mesh
 
-  #define MESH_INSET 10             // Set Mesh bounds as an inset region of the bed
+  #define MESH_INSET 5              // Set Mesh bounds as an inset region of the bed
   #define GRID_MAX_POINTS_X 10      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
@@ -1365,7 +1361,7 @@
 #endif
 
 // Homing speeds (mm/m)
-#define HOMING_FEEDRATE_XY (40*60)
+#define HOMING_FEEDRATE_XY (60*60)
 #define HOMING_FEEDRATE_Z  (30*60)
 
 // Validate that endstops are triggered on homing moves
@@ -1401,13 +1397,13 @@
  *    +-------------->X     +-------------->X     +-------------->Y
  *     XY_SKEW_FACTOR        XZ_SKEW_FACTOR        YZ_SKEW_FACTOR
  */
-//#define SKEW_CORRECTION
+#define SKEW_CORRECTION
 
 #if ENABLED(SKEW_CORRECTION)
   // Input all length measurements here:
-  #define XY_DIAG_AC 141.71
-  #define XY_DIAG_BD 140.95
-  #define XY_SIDE_AD 99.96
+  #define XY_DIAG_AC 140.93
+  #define XY_DIAG_BD 140.40
+  #define XY_SIDE_AD 99.39
 
   // Or, set the default skew factors directly here
   // to override the above measurements:
