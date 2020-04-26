@@ -1698,8 +1698,9 @@
  *
  * Override the default value based on the driver type set in Configuration.h.
  */
-//#define MINIMUM_STEPPER_POST_DIR_DELAY 650
-//#define MINIMUM_STEPPER_PRE_DIR_DELAY 650
+// https://github.com/MarlinFirmware/Marlin/issues/17323
+#define MINIMUM_STEPPER_POST_DIR_DELAY 60
+#define MINIMUM_STEPPER_PRE_DIR_DELAY 60
 
 /**
  * Minimum stepper driver pulse width (in µs)
