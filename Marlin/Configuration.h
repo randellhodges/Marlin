@@ -1401,9 +1401,9 @@
 
 #if ENABLED(SKEW_CORRECTION)
   // Input all length measurements here:
-  #define XY_DIAG_AC 140.93
-  #define XY_DIAG_BD 140.40
-  #define XY_SIDE_AD 99.39
+  #define XY_DIAG_AC 140.82
+  #define XY_DIAG_BD 140.32
+  #define XY_SIDE_AD 99.41
 
   // Or, set the default skew factors directly here
   // to override the above measurements:
@@ -1421,7 +1421,7 @@
   #endif
 
   // Enable this option for M852 to set skew at runtime
-  //#define SKEW_CORRECTION_GCODE
+  #define SKEW_CORRECTION_GCODE
 #endif
 
 //=============================================================================
