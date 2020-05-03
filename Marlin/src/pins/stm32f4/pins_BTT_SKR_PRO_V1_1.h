@@ -44,7 +44,7 @@
 //
 // Servos
 //
-#define SERVO0_PIN                          PA1
+#define SERVO0_PIN                          PA2
 
 //
 // Trinamic Stallguard pins
@@ -99,7 +99,7 @@
 // Z Probe must be this pin
 //
 #ifndef Z_MIN_PROBE_PIN
-  #define Z_MIN_PROBE_PIN                   PA2
+  #define Z_MIN_PROBE_PIN                   PA1
 #endif
 
 //

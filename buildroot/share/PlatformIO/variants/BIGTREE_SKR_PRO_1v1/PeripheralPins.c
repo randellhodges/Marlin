@@ -133,15 +133,15 @@ const PinMap PinMap_PWM[] = {
   {PE_5,  TIM9,   STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF3_TIM9, 1, 0)}, // TIM9_CH1    FAN1
   {PE_6,  TIM9,   STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF3_TIM9, 2, 0)}, // TIM9_CH2    FAN2
   {PC_9,  TIM8,   STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF3_TIM8, 4, 0)}, // TIM8_CH4    EXTENSION1-4
-  {PA_1,  TIM5,   STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF2_TIM5, 2, 0)}, // TIM5_CH2    BL-TOUCH-SERVO
+  //{PA_1,  TIM5,   STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF2_TIM5, 2, 0)}, // TIM5_CH2    BL-TOUCH-SERVO
 
   // These pins have been defined for something else on the board but they MIGHT be
   // used by the user as PWM pins if they aren't used for their primary purpose.
   {PC_6,  TIM3,   STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF2_TIM3, 1, 0)}, // TIM3_CH1    ESP8266 connector. Available if 8266 isn't used
   {PC_7,  TIM3,   STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF2_TIM3, 2, 0)}, // TIM3_CH2    ESP8266 connector. Available if 8266 isn't used
   {PB_7,  TIM4,   STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF2_TIM4, 2, 0)}, // TIM4_CH2    I2C connector, SDA pin. Available if I2C isn't used.
-                                                                                       // TIM5_CH1    is used by the Servo Library
-  {PA_2,  TIM5,   STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF2_TIM5, 3, 0)}, // TIM5_CH3    BL-TOUCH port. Available if Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
+  //                                                                                     // TIM5_CH1    is used by the Servo Library
+  //{PA_2,  TIM5,   STM_PIN_DATA_EXT(STM_MODE_AF_PP, GPIO_PULLUP, GPIO_AF2_TIM5, 3, 0)}, // TIM5_CH3    BL-TOUCH port. Available if Z_MIN_PROBE_USES_Z_MIN_ENDSTOP_PIN
 
   /**
    * Unused by specifications on SKR-Pro.
