@@ -716,7 +716,7 @@
 // https://blog.prusaprinters.org/calculator/
 // Defaults: 80, 80, 400, 93 (1.8 stepper)
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.0, 160.0, 400, 830 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.0, 160.0, 1600, 830 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -753,7 +753,7 @@
  */
 #define DEFAULT_ACCELERATION           500    // X, Y, Z and E acceleration for printing moves
 #define DEFAULT_RETRACT_ACCELERATION   500    // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION   1000    // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_TRAVEL_ACCELERATION    500    // X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk limits (mm/s)

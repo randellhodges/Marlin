@@ -1690,8 +1690,8 @@
  * Override the default value based on the driver type set in Configuration.h.
  */
 // https://github.com/MarlinFirmware/Marlin/issues/17323
-#define MINIMUM_STEPPER_POST_DIR_DELAY 60
-#define MINIMUM_STEPPER_PRE_DIR_DELAY 60
+//#define MINIMUM_STEPPER_POST_DIR_DELAY 60
+//#define MINIMUM_STEPPER_PRE_DIR_DELAY 60
 
 /**
  * Minimum stepper driver pulse width (in µs)
@@ -2064,7 +2064,7 @@
 
   // Using a 2.0A stepper
   #if AXIS_IS_TMC(X)
-    #define X_CURRENT      1200        // (mA) RMS current. Multiply by 1.414 for peak current.
+    #define X_CURRENT      1000        // (mA) RMS current. Multiply by 1.414 for peak current.
     #define X_CURRENT_HOME  X_CURRENT  // (mA) RMS current for sensorless homing
     #define X_MICROSTEPS     16    // 0..256
     #define X_RSENSE          0.11
@@ -2081,7 +2081,7 @@
 
   // Using a 2.0A stepper
   #if AXIS_IS_TMC(Y)
-    #define Y_CURRENT      1200
+    #define Y_CURRENT      1000
     #define Y_CURRENT_HOME  Y_CURRENT
     #define Y_MICROSTEPS     16
     #define Y_RSENSE          0.11
@@ -2098,9 +2098,9 @@
 
   // Using a 2.0A stepper
   #if AXIS_IS_TMC(Z)
-    #define Z_CURRENT      1200
+    #define Z_CURRENT      1000
     #define Z_CURRENT_HOME  Z_CURRENT
-    #define Z_MICROSTEPS      4
+    #define Z_MICROSTEPS     16
     #define Z_RSENSE          0.11
     #define Z_CHAIN_POS      -1
   #endif
@@ -2132,7 +2132,7 @@
 
   // Using a 1.4A stepper
   #if AXIS_IS_TMC(E0)
-    #define E0_CURRENT      700
+    #define E0_CURRENT      600
     #define E0_MICROSTEPS    16
     #define E0_RSENSE         0.11
     #define E0_CHAIN_POS     -1
