@@ -716,14 +716,14 @@
 // https://blog.prusaprinters.org/calculator/
 // Defaults: 80, 80, 400, 93 (1.8 stepper)
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.0, 160.0, 1600, 830 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.0, 160.0, 400, 830 }
 
 /**
  * Default Max Feed Rate (mm/s)
  * Override with M203
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 200, 200, 10, 120 }
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 10, 120 }
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
@@ -798,7 +798,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
