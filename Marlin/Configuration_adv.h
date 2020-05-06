@@ -1543,7 +1543,7 @@
   //#define EXTRA_LIN_ADVANCE_K // Enable for second linear advance constants
   #define LIN_ADVANCE_K 0       // Unit: mm compression per 1mm/s extruder speed
   //#define LA_DEBUG            // If enabled, this will generate debug information output over USB.
-  #define EXPERIMENTAL_SCURVE  // Enable this option to permit S-Curve Acceleration
+  //#define EXPERIMENTAL_SCURVE // Enable this option to permit S-Curve Acceleration
 #endif
 
 // @section leveling
@@ -1690,8 +1690,8 @@
  * Override the default value based on the driver type set in Configuration.h.
  */
 // https://github.com/MarlinFirmware/Marlin/issues/17323
-#define MINIMUM_STEPPER_POST_DIR_DELAY 60
-#define MINIMUM_STEPPER_PRE_DIR_DELAY 60
+//#define MINIMUM_STEPPER_POST_DIR_DELAY 60
+//#define MINIMUM_STEPPER_PRE_DIR_DELAY 60
 
 /**
  * Minimum stepper driver pulse width (in µs)
