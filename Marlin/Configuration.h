@@ -716,7 +716,7 @@
 // https://blog.prusaprinters.org/calculator/
 // Defaults: 80, 80, 400, 93 (1.8 stepper)
 
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.0, 160.0, 400, 830 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160.0, 160.0, 1600, 830 }
 
 /**
  * Default Max Feed Rate (mm/s)
